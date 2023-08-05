@@ -20,6 +20,7 @@
   background-color: var(--backround-text-color);
   width: 1600px;
   display: block;
+  margin: 0;
   margin: auto;
 }
 
@@ -41,27 +42,33 @@ a:focus {
   color: var(--hover-color);
 }
 
-.logo {
+/* ~ ~ ~ Header ~ ~ ~ */
+
+.top-logo, .bottom-logo {
   font-family: var(--logo-font-family);
   font-weight: 700;
   font-size: 1.625em;
   margin-left: 215px;
 }
 
-.logo span {
+.top-logo span, .bottom-logo span {
   color: var(--hover-color);
 }
 
-.top {
+.top-logo {
   color: var(--heading-color);
 }
 
-.bottom {
+.bottom-logo {
   color: var(--backround-text-color);
 }
 
 header a {
   font-weight: 500;
+}
+
+.top-phone {
+  margin-left: 40px;
 }
 
 .top-mail,
@@ -160,13 +167,16 @@ nav ul {
   opacity: 100%;
 }
 
-/*Footer section*/
+/* ~ ~ ~ Header ~ ~ ~ */
+
+/* ~ ~ ~ Footer ~ ~ ~ */
 
 footer {
   display: flex;
   flex-direction: row;
   height: 251px;
   align-items: center;
+  background-color: #2f303a;
 }
 
 footer ul {
@@ -239,13 +249,6 @@ address {
   top: -25px;
 }
 
-.subscribe-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
 .subscribe-content input{
   width: 358px;
   height: 50px;
@@ -302,8 +305,9 @@ address {
   left: 150px;
 }
 
-/*Footer section*/
+/* ~ ~ ~ Footer ~ ~ ~ */
 
+/*==========Common styling==========*/
 
 
 /*==========Studio styling==========*/
@@ -336,14 +340,6 @@ address {
   font-weight: 700;
   border-radius: 0.25em;
   border-width: 0;
-}
-
-footer {
-  background-color: #2f303a;
-}
-
-.top-phone {
-  margin-left: 40px;
 }
 
 .activities-section {
@@ -389,7 +385,7 @@ footer {
 }
 
 .abilities .abilities-icons {
-  width: 270px;
+  max-width: 270px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -532,7 +528,7 @@ footer {
   z-index: 1;
 }
 
-/*==========Modal window==========*/
+/* ~ ~ ~ Modal window ~ ~ ~ */
 
 .modal {
   position: fixed;
@@ -695,9 +691,7 @@ label, input {
   letter-spacing: 0.12px;
 }
 
-/*
-
-/*CHECKBOX*/
+/*---CHECKBOX---*/
 
 /* Customize the label */
 .conditions {
@@ -786,8 +780,7 @@ label, input {
   transform: rotate(45deg);
 } 
 
-
-/*CHECKBOX*/
+/*---CHECKBOX---*/
 
 [type="submit"] {
   width: 200px;
@@ -809,6 +802,10 @@ label, input {
   left: 125px;
   cursor: pointer;
 }
+
+/* ~ ~ ~ Modal window ~ ~ ~ */
+
+/*==========Studio styling==========*/
 
 /*==========Portofolio styling==========*/
 
@@ -946,4 +943,219 @@ label, input {
   height: 1px;
   width: 1600px;
   background: #ececec;
+}
+
+/*==========Portofolio styling==========*/
+
+/*==========Adaptive==========*/
+
+@media only screen and (min-width:0) and (max-width: 480px) {
+  /* For mobile phones: */
+
+  /* ~ ~ ~ Common ~ ~ ~ */
+  header {
+    max-width: 480px ;
+  }
+
+  header nav, .top-mail, .top-phone {
+    visibility: hidden;
+    position: absolute;
+    max-width: 480px;
+    left: 0;
+    top:0;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul {
+    position: absolute;
+    left: 0;
+    max-width: 200px;
+    margin: 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    max-width: 480px;
+  }
+
+  .top-logo {
+    position: absolute;
+    left: 15px;
+    margin: 0;
+  }
+
+  .bottom-logo {
+    position: relative;
+    left: 20px;
+    
+  }
+
+  .contact-section {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-section ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-media {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    /* background-color: red; */
+    font-weight: 700;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* ~ ~ ~ Common ~ ~ ~ */
+
+  /* ~ ~ ~ Studio ~ ~ ~ */
+  .about-section {
+    height: 400px;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background-image-m.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .about-section h1 {
+    padding: 0 60px 0;
+    width: 480px;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+  }
+
+  .activities-section {
+    min-height: 994px;
+    width: 480px;
+    position: relative;
+    top: 520px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .activities-section ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    max-width: 480px;
+  } 
+
+  .abilities {
+    max-width: 480px;
+  }
+
+  .abilities .abilities-icons {
+    max-width: 450px;
+    display: flex;
+    flex-basis: auto;
+    margin: 0;
+    margin: auto;
+  }
+
+  .activities-section h3, .activities-section p {
+    width: 450px;
+  }
+
+  .activities-section h3 {
+    text-align: center;
+  }
+
+  .activities-section h2, .description {
+    visibility: hidden;
+  }
+
+  .team-section {
+    min-height: 2761px;
+  }
+
+  .team-section ul {
+    flex-direction: column;
+    position: relative;
+    width: 450px;
+    height: 622px;
+  }
+
+  .customers {
+    position: relative;
+    min-height: 1000px;
+   
+  }
+
+  .customers ul {
+    flex-flow: row wrap;
+    max-width: 480px;
+  }
+
+  .subscribe {
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    
+  }
+
+  .subscribe-content {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+  }
+
+  .modal {
+    max-width: 480px;
+  }
+
+  .modal-content {
+    width: 480px;
+    height: 581px;
+  }
+
+  /* ~ ~ ~ Studio ~ ~ ~ */
+
+  /* ~ ~ ~ Modal ~ ~ ~ */
+
+  /* ~ ~ ~ Modal ~ ~ ~ */
+
+  /* ~ ~ ~ Portofolio ~ ~ ~ */
+
+  /* ~ ~ ~ Portofolio ~ ~ ~ */
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+  /* For tablets: */
+  .container {
+    background-color: blue;
+    font-family: var(--text-font-family);
+    font-weight: 700;
+    color: var(--heading-color);
+    width: 768px;
+    display: block;
+    margin: 0;
+    margin: auto;
+  }
+
+   .about-section {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background-image-t.jpg);
+  }
 }
