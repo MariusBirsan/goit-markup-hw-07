@@ -344,7 +344,6 @@ address {
 
 .activities-section {
   font-size: 0.875em;
-  height: 769px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -409,7 +408,6 @@ address {
 }
 
 .team-section {
-  height: 708px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -423,7 +421,6 @@ address {
   padding-bottom: 0;
 }
 .team-section ul {
-  height: 708px;
   display: flex;
   justify-content: space-between;
   gap: 50px;
@@ -467,7 +464,6 @@ address {
 }
 
 .customers {
-  height: 372px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -954,24 +950,13 @@ label, input {
 
   /* ~ ~ ~ Common ~ ~ ~ */
   header {
-    max-width: 480px ;
-  }
-
-  header nav, .top-mail, .top-phone {
-    visibility: hidden;
-    position: absolute;
     max-width: 480px;
-    left: 0;
-    top:0;
-    margin: 0;
-    padding: 0;
   }
 
-  nav ul {
-    position: absolute;
-    left: 0;
-    max-width: 200px;
-    margin: 0;
+  header nav, .top-mail, .top-phone,
+   .activities-section h2, .activities-section .description{
+    display: none;
+ 
   }
 
   footer {
@@ -992,32 +977,32 @@ label, input {
   .bottom-logo {
     position: relative;
     left: 20px;
-    
-  }
-
-  .contact-section {
     margin: 0;
     padding: 0;
   }
 
   .contact-section ul {
+    position: relative;
     margin: 0;
     padding: 0;
+    left: 0;
   }
 
   .social-media {
+    position: relative;
     margin: 0;
     padding: 0;
+    left: 0;
   }
 
   .container {
-    /* background-color: red; */
     font-weight: 700;
     max-width: 480px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: auto;
   }
   /* ~ ~ ~ Common ~ ~ ~ */
 
@@ -1030,8 +1015,9 @@ label, input {
   }
 
   .about-section h1 {
+    width:inherit;
+    position: relative;
     padding: 0 60px 0;
-    width: 480px;
     text-align: center;
     font-size: 26px;
     font-style: normal;
@@ -1042,12 +1028,9 @@ label, input {
   }
 
   .activities-section {
-    min-height: 994px;
-    width: 480px;
+    width: inherit;
+    margin: 60px 0;
     position: relative;
-    top: 520px;
-    display: flex;
-    flex-direction: column;
   }
 
   .activities-section ul {
@@ -1058,11 +1041,6 @@ label, input {
     padding: 0;
     max-width: 480px;
   } 
-
-  .abilities {
-    max-width: 480px;
-  }
-
   .abilities .abilities-icons {
     max-width: 450px;
     display: flex;
@@ -1071,47 +1049,26 @@ label, input {
     margin: auto;
   }
 
-  .activities-section h3, .activities-section p {
-    width: 450px;
-  }
-
   .activities-section h3 {
     text-align: center;
   }
 
-  .activities-section h2, .description {
-    visibility: hidden;
-  }
-
-  .team-section {
-    min-height: 2761px;
-  }
-
   .team-section ul {
     flex-direction: column;
-    position: relative;
-    width: 450px;
-    height: 622px;
-  }
-
-  .customers {
-    position: relative;
-    min-height: 1000px;
-   
   }
 
   .customers ul {
     flex-flow: row wrap;
-    max-width: 480px;
+    justify-content: center;
+    gap: 30px;
   }
 
   .subscribe {
+    max-width: 480px;
     position: relative;
     left: 0;
     display: flex;
     flex-direction: column;
-    max-width: 480px;
-    
   }
 
   .subscribe-content {
@@ -1121,11 +1078,11 @@ label, input {
   }
 
   .modal {
-    max-width: 480px;
+    max-width: 450px;
   }
 
   .modal-content {
-    width: 480px;
+    max-width: 450px;
     height: 581px;
   }
 
@@ -1135,6 +1092,17 @@ label, input {
 
   /* ~ ~ ~ Modal ~ ~ ~ */
 
+  /* ~ ~ ~ Menu ~ ~ ~ */
+  .js-menu-container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 480px;
+    height: 796;
+  }
+  /* ~ ~ ~ Menu ~ ~ ~ */
+
   /* ~ ~ ~ Portofolio ~ ~ ~ */
 
   /* ~ ~ ~ Portofolio ~ ~ ~ */
@@ -1143,6 +1111,11 @@ label, input {
 
 @media only screen and (min-width: 480px) and (max-width: 768px){
   /* For tablets: */
+
+  .js-menu-container {
+    display: none;
+  }
+
   .container {
     background-color: blue;
     font-family: var(--text-font-family);
@@ -1157,5 +1130,11 @@ label, input {
    .about-section {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/background-image-t.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .js-menu-container {
+    display: none;
   }
 }
