@@ -16,22 +16,12 @@
   <body class="container">
     <!--menu-->
     <div class="js-menu-container">
-      <button
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg>
-          <use href="./images/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
       <button class="menu-toggle js-close-menu">
         <svg>
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-
-      <nav class="main-navigation">
+      <nav class="menu-drawer-navigation">
         <ul>
           <li class="top-container">
             <a class="top-links" href="index.html">Studio</a>
@@ -44,27 +34,18 @@
           </li>
         </ul>
       </nav>
-      <a class="top-mail" href="mailto:info@devstudio.com">
-        <svg class="header-icons envelope">
-          <use href="./images/icons.svg#icon-envelope"></use>
-        </svg>
-        @devstudio.com
-      </a>
-      <a class="top-phone" href="tel:+1212-772-4510">
-        <svg class="header-icons smartphone">
-          <use href="./images/icons.svg#icon-smartphone"></use>
-        </svg>
-        +1 212-772-4150
-      </a>
-
-      <ul class="menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+      <a class="menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a class="menu-phone" href="tel:+1212-772-4510">+1 212-772-4150</a>
+      <ul class="menu-drawer-social">
+        <li><a href="https://www.instagram.com/" class="link">Instagram</a></li>
+        <li><img src="./images/Separator.jpg" alt="line"></li>
+        <li><a href="https://www.twitter.com/" class="link">Twitter</a></li>
+        <li><img src="./images/Separator.jpg" alt="line"></li>
+        <li><a href="https://www.facebook.com/" class="link">Facebook</a></li>
+        <li><img src="./images/Separator.jpg" alt="line"></li>
+        <li><a href="https://www.linkedin.com/" class="link">LinkedIn</a></li>
       </ul>
     </div>
-
     <!--menu-->
 
     <header>
@@ -82,6 +63,17 @@
           </li>
         </ul>
       </nav>
+
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg>
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+
       <a class="top-mail" href="mailto:info@devstudio.com">
         <svg class="header-icons envelope">
           <use href="./images/icons.svg#icon-envelope"></use>
