@@ -16,76 +16,55 @@
   <body class="container">
     <!--menu-->
     <div class="js-menu-container">
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-        <button class="menu-toggle js-close-menu">
-          <svg
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-        
-        <nav class="main-navigation">
-          <ul>
-            <li class="top-container">
-              <a class="top-links" href="index.html">Studio</a>
-            </li>
-            <li class="top-container">
-              <a class="top-links" href="portofolio.html">Portofolio</a>
-            </li>
-            <li class="top-container">
-              <a class="top-links" href="#contact">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="top-mail" href="mailto:info@devstudio.com">
-          <svg class="header-icons envelope">
-            <use href="./images/icons.svg#icon-envelope"></use>
-          </svg>
-          @devstudio.com
-        </a>
-        <a class="top-phone" href="tel:+1212-772-4510">
-          <svg class="header-icons smartphone">
-            <use href="./images/icons.svg#icon-smartphone"></use>
-          </svg>
-          +1 212-772-4150
-        </a>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg>
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button class="menu-toggle js-close-menu">
+        <svg>
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
 
-        <ul class="menu">
-          <li><a href="" class="link">About</a></li>
-          <li><a href="" class="link">Products</a></li>
-          <li><a href="" class="link">Contacts</a></li>
-          <li><a href="" class="link">Career</a></li>
+      <nav class="main-navigation">
+        <ul>
+          <li class="top-container">
+            <a class="top-links" href="index.html">Studio</a>
+          </li>
+          <li class="top-container">
+            <a class="top-links" href="portofolio.html">Portofolio</a>
+          </li>
+          <li class="top-container">
+            <a class="top-links" href="#contact">Contacts</a>
+          </li>
         </ul>
+      </nav>
+      <a class="top-mail" href="mailto:info@devstudio.com">
+        <svg class="header-icons envelope">
+          <use href="./images/icons.svg#icon-envelope"></use>
+        </svg>
+        @devstudio.com
+      </a>
+      <a class="top-phone" href="tel:+1212-772-4510">
+        <svg class="header-icons smartphone">
+          <use href="./images/icons.svg#icon-smartphone"></use>
+        </svg>
+        +1 212-772-4150
+      </a>
+
+      <ul class="menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
     </div>
 
-    
     <!--menu-->
 
     <header>
@@ -124,6 +103,7 @@
           Request our services
         </button>
       </section>
+
       <section class="activities-section">
         <ul class="abilities">
           <li>
@@ -201,12 +181,13 @@
           </li>
         </ul>
       </section>
+
       <section class="team-section">
         <h2>Our Team</h2>
         <ul>
           <li>
             <div class="team-content">
-              <img src="images/person1.jpg" alt="person image" width="270" />
+              <img src="images/person1-m.jpg" alt="person image" />
               <div class="team-description">
                 <h3>Christofer Walker</h3>
                 <p>Product Designer</p>
@@ -240,7 +221,7 @@
           </li>
           <li>
             <div class="team-content">
-              <img src="images/person2.jpg" alt="person image" width="270" />
+              <img src="images/person2-m.jpg" alt="person image" />
               <div class="team-description">
                 <h3>Kylie Evans</h3>
                 <p>Frontend Developer</p>
@@ -274,7 +255,7 @@
           </li>
           <li>
             <div class="team-content">
-              <img src="images/person3.jpg" alt="person image" width="270" />
+              <img src="images/person3-m.jpg" alt="person image" />
               <div class="team-description">
                 <h3>Ryan Harris</h3>
                 <p>Marketing</p>
@@ -308,7 +289,7 @@
           </li>
           <li>
             <div class="team-content">
-              <img src="images/person4.jpg" alt="person image" width="270" />
+              <img src="images/person4-m.jpg" alt="person image" />
               <div class="team-description">
                 <h3>Tyler Moore</h3>
                 <p>UI Designer</p>
@@ -342,6 +323,7 @@
           </li>
         </ul>
       </section>
+
       <section class="customers">
         <h2>Regular Customers</h2>
         <ul>
@@ -390,18 +372,21 @@
         </ul>
       </section>
     </main>
+
     <footer id="contact">
       <div class="contact-section">
         <a class="bottom-logo" href=""><span>Web</span>Studio</a>
         <ul>
-          <li><address>695 Park Ave, NY 10065, USA</address></li>
+          <li>
+            <address>695 Park Ave, NY 10065, USA</address>
+          </li>
           <li>
             <a class="bottom-mail" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="bottom-phone"  href="tel:+1212-772-4510"
+            <a class="bottom-phone" href="tel:+1212-772-4510"
               >+1 212-772-4150</a
             >
           </li>
@@ -434,16 +419,15 @@
       </div>
       <div class="subscribe">
         <h3>SUBSCRIBE FOR THE NEWSLATTER</h3>
-        <label class="subscribe-content" >
-          <input type="text" id="e-mail" name="e-mail" placeholder="E-mail"/>
-          
+        <label class="subscribe-content">
+          <input type="text" id="e-mail" name="e-mail" placeholder="E-mail" />
         </label>
-        <button type="submit">
-            Subscribe
-            <svg class="subscribe-btn-svg">
-              <use href="./images/icons.svg#icon-plane"></use>
-            </svg>
-          </button>
+        <button type="submit" id="subscribe-btn">
+          Subscribe
+          <svg class="subscribe-btn-svg">
+            <use href="./images/icons.svg#icon-plane"></use>
+          </svg>
+        </button>
       </div>
     </footer>
 
@@ -460,21 +444,21 @@
           <ul>
             <li>
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" class="info"/>
+              <input type="text" id="name" name="name" class="info" />
               <svg class="modal-icons name" id="svg">
                 <use href="./images/icons.svg#icon-modal-name"></use>
               </svg>
             </li>
             <li>
               <label for="phone">Telephone</label>
-              <input type="text" id="phone" name="phone" class="info"/>
+              <input type="text" id="phone" name="phone" class="info" />
               <svg class="modal-icons phone">
                 <use href="./images/icons.svg#icon-modal-phone"></use>
               </svg>
             </li>
             <li>
               <label for="email">E-mail</label>
-              <input type="text" id="email" name="email" class="info"/>
+              <input type="text" id="email" name="email" class="info" />
               <svg class="modal-icons email">
                 <use href="./images/icons.svg#icon-modal-email"></use>
               </svg>
@@ -489,14 +473,15 @@
               ><br />
             </li>
             <li>
-              <label class="conditions" >I agree with the letter and accept the
+              <label class="conditions"
+                >I agree with the letter and accept the
                 <a href="" class="conditions-link">Terms and Conditions</a>
-                <input type="checkbox" checked="checked">
+                <input type="checkbox" checked="checked" />
                 <span class="checkmark"></span>
               </label>
             </li>
-            <li><input type="submit" value="Send"/></li>
-          </ul>          
+            <li><input class="text-submit" type="submit" value="Send" /></li>
+          </ul>
         </form>
       </div>
     </div>

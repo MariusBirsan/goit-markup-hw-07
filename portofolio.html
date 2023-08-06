@@ -15,8 +15,8 @@
   </head>
   <body class="container">
     <header>
-      <a class="top logo" href=""><span>Web</span>Studio</a>
-      <nav>
+      <a class="top-logo" href=""><span>Web</span>Studio</a>
+      <nav class="main-navigation">
         <ul>
           <li class="top-container">
             <a class="top-links" href="index.html">Studio</a>
@@ -59,7 +59,7 @@
         <ul>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Web-site_img_1.jpg" alt="laptop" width="370" />
+              <img src="images/Web-site_img_1.jpg" alt="laptop" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
@@ -73,7 +73,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Design_img_1.jpg" alt="2 basketball players playing basketball" width="370"/>
+              <img src="images/Design_img_1.jpg" alt="2 basketball players playing basketball" width="450"/>
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -87,7 +87,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Apps_img_1.jpg" alt="logo" width="370" />
+              <img src="images/Apps_img_1.jpg" alt="logo" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -101,7 +101,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Marketing_img_1.jpg" alt="headphones" width="370" />
+              <img src="images/Marketing_img_1.jpg" alt="headphones" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -115,7 +115,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Apps_img_2.jpg" alt="2 small boxes" width="370" />
+              <img src="images/Apps_img_2.jpg" alt="2 small boxes" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -129,7 +129,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Web-site_img_2.jpg" alt="PC Monitor" width="370" />
+              <img src="images/Web-site_img_2.jpg" alt="PC Monitor" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -143,7 +143,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Design_img_2.jpg" alt="opened book" width="370" />
+              <img src="images/Design_img_2.jpg" alt="opened book" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -157,7 +157,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Marketing_img_2.jpg" alt="paper label" width="370" />
+              <img src="images/Marketing_img_2.jpg" alt="paper label" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -171,7 +171,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Apps_img_3.jpg" alt="writing on laptop" width="370" />
+              <img src="images/Apps_img_3.jpg" alt="writing on laptop" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -188,16 +188,18 @@
     </main>
     <footer id="contact">
       <div class="contact-section">
-        <a class="bottom logo" href=""><span>Web</span>Studio</a>
+        <a class="bottom-logo" href=""><span>Web</span>Studio</a>
         <ul>
-          <li><address>695 Park Ave, NY 10065, USA</address></li>
+          <li>
+            <address>695 Park Ave, NY 10065, USA</address>
+          </li>
           <li>
             <a class="bottom-mail" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="bottom-phone" href="tel:+1212-772-4510"
+            <a class="bottom-phone"  href="tel:+1212-772-4510"
               >+1 212-772-4150</a
             >
           </li>
@@ -232,13 +234,14 @@
         <h3>SUBSCRIBE FOR THE NEWSLATTER</h3>
         <label class="subscribe-content" >
           <input type="text" id="e-mail" name="e-mail" placeholder="E-mail"/>
-          <button type="submit">
-            Subscribe
-          <svg class="subscribe-btn-svg">
-            <use href="./images/icons.svg#icon-plane"></use>
-          </svg>
-          </button>
+          
         </label>
+        <button type="submit" id="subscribe-btn">
+            Subscribe
+            <svg class="subscribe-btn-svg">
+              <use href="./images/icons.svg#icon-plane"></use>
+            </svg>
+          </button>
       </div>
     </footer>
   </body>
