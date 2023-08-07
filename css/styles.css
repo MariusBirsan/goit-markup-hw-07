@@ -24,6 +24,8 @@
   flex: 1 0 auto;
   margin: 0;
   margin: auto;
+  min-width: 480px;
+  width: 100%;
 }
 
 main {
@@ -62,9 +64,9 @@ a:focus {
 
 .top-logo {
   color: var(--heading-color);
-  position: absolute;
-  top: 16px;
-  left: 15px;
+  position: relative;
+  top: 0;
+  left: -130px;
 }
 
 .bottom-logo {
@@ -85,9 +87,10 @@ header {
 .menu-toggle {
   background-color: transparent;
   border: none;
-  position: absolute;
-  top: 10px;
-  right: 15px;
+  position: relative;
+  top: 0px;
+  right: -150px;
+  padding: 0;
 }
 
 .menu-toggle svg {
@@ -138,8 +141,16 @@ p {
 
 footer {
   display: flex;
+  justify-content: center;
+  min-width: 480px;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   background-color: #2f303a;
   width: 100%;
@@ -301,7 +312,6 @@ address {
   background-color: white;
   height: 100%;
   padding: 48px 40px;
-  min-width: 100%;
   z-index: 1;
 }
 
