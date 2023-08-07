@@ -192,8 +192,6 @@ p {
   padding: 0;
 }
 
-
-
 .menu-mail,
 .menu-phone {
   color: var(--text-color);
@@ -230,7 +228,6 @@ p {
 }
 
 .menu-drawer-social {
-  color: var(--hover-color);
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -244,6 +241,10 @@ p {
   position: absolute;
   top: 726px;
   left: 40px;
+}
+
+.menu-drawer-social li a{
+  color: var(--hover-color);
 }
 
 /* ~ ~ ~ Menu ~ ~ ~ */
