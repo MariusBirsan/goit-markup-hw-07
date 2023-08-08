@@ -150,7 +150,7 @@ p {
   top: 0;
   right: 0;
   background-color: white;
-  height: 100%;
+  height: auto;
   padding: 48px 40px;
   z-index: 1;
   min-width: 480px;
@@ -638,7 +638,7 @@ address {
   top: 0;
   left: 0;
   width: auto;
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1026,7 +1026,7 @@ label, input {
 }
 
 .projects li:hover .overlay {
-  height: 100%;
+  height: auto;
 }
 
 .overlay-projects-text {
