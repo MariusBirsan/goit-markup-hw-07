@@ -25,7 +25,7 @@
   margin: 0;
   margin: auto;
   min-width: 480px;
-  width: 100%;
+  width: auto;
 }
 
 main {
@@ -154,7 +154,7 @@ p {
   padding: 48px 40px;
   z-index: 1;
   min-width: 480px;
-  width: 100%;
+  width: auto;
 }
 
 .js-menu-container .js-close-menu {
@@ -255,7 +255,7 @@ footer {
   display: flex;
   justify-content: center;
   min-width: 480px;
-  width: 100%;
+  width: auto;
 }
 
 .footer-container {
@@ -265,7 +265,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   background-color: #2f303a;
-  width: 100%;
+  width: auto;
 }
 
 footer ul {
@@ -518,7 +518,7 @@ address {
   flex-direction: column;
   align-items: center;
   background-color: #f5f4fa;
-  min-width: 100%;
+  min-width: auto;
 }
 
 .team-section ul {
@@ -637,7 +637,7 @@ address {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -750,7 +750,7 @@ form label {
 
 .info {
   height: 40px;
-  width: 100%;
+  width: auto;
   margin: 0;
   color: #757575;
   border-radius: 4px;
@@ -773,7 +773,7 @@ form label {
 }
 
 textarea {
-  width: 100%;
+  width: auto;
   height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.20);
@@ -925,13 +925,13 @@ label, input {
 .line {
   height: 1px;
   min-width: 480px;
-  width: 100%;
+  width: auto;
   background: #ececec;
 }
 
 .filters {
   min-width: 480px;
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -948,7 +948,7 @@ label, input {
   padding-left: 0;
   width: 300px;
   position: relative;
-  left: -75px;
+  left: -7px;
 }
 
 .filter {
