@@ -51,14 +51,16 @@ a:focus {
   color: var(--hover-color);
 }
 
-.top-logo, .bottom-logo {
+.top-logo,
+.bottom-logo {
   font-family: var(--logo-font-family);
   font-weight: 700;
   font-size: 1.625em;
   margin: 0;
 }
 
-.top-logo span, .bottom-logo span {
+.top-logo span,
+.bottom-logo span {
   color: var(--hover-color);
 }
 
@@ -94,12 +96,13 @@ header {
 }
 
 .menu-toggle svg {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
-nav, .top-mail, .top-phone {
-   display: none;
+nav,
+.top-contact {
+  display: none;
 }
 
 header a {
@@ -243,7 +246,7 @@ p {
   left: 40px;
 }
 
-.menu-drawer-social li a{
+.menu-drawer-social li a {
   color: var(--hover-color);
 }
 
@@ -344,11 +347,11 @@ address {
   margin: 0 0 60px 0;
 }
 
-.subscribe-content input{
+.subscribe-content input {
   width: 358px;
   height: 50px;
   padding-left: 15px;
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -356,8 +359,8 @@ address {
   letter-spacing: 0.48px;
   flex-shrink: 0;
   border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.30);
-  background: rgba(33, 150, 243, 0.00);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: var(--transition);
 }
@@ -378,7 +381,7 @@ address {
   margin: 0;
 }
 
-#subscribe-btn  {
+#subscribe-btn {
   width: 200px;
   height: 50px;
   color: var(--backround-text-color);
@@ -393,7 +396,7 @@ address {
   justify-content: center;
   flex-shrink: 0;
   border-radius: 4px;
-  background: #2196F3;
+  background: #2196f3;
   border: 0;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--backround-text-color);
@@ -412,7 +415,6 @@ address {
 
 /*==========Common styling==========*/
 
-
 /*==========Studio styling==========*/
 
 .about-section {
@@ -422,10 +424,10 @@ address {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/background-image-m.jpg);
   background-repeat: no-repeat;
-  background-position:inherit;
+  background-position: inherit;
   margin: auto;
 }
 
@@ -719,8 +721,8 @@ address {
 }
 
 form {
- width: 370px;
- height: 609px;
+  width: 370px;
+  height: 609px;
 }
 
 form ul {
@@ -756,7 +758,7 @@ form label {
   margin: 0;
   color: #757575;
   border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.20);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 0 0 0 40px;
   outline: none;
   transition: var(--transition);
@@ -778,9 +780,9 @@ textarea {
   width: auto;
   height: 120px;
   border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.20);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 12px 16px;
-  color: rgba(117, 117, 117, 0.50);
+  color: rgba(117, 117, 117, 0.5);
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -797,7 +799,8 @@ textarea:focus {
   border: 1px solid var(--hover-color);
 }
 
-label, input {
+label,
+input {
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -811,7 +814,7 @@ label, input {
 /* Customize the label */
 
 .conditions {
-   color: #757575;
+  color: #757575;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -832,7 +835,7 @@ label, input {
 
 /* Customize the label link */
 .conditions-link {
-  color: #2196F3;
+  color: #2196f3;
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -894,7 +897,7 @@ label, input {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-} 
+}
 
 /*---CHECKBOX---*/
 
@@ -903,7 +906,7 @@ label, input {
   height: 50px;
   flex-shrink: 0;
   border-radius: 4px;
-  background: #2196F3;
+  background: #2196f3;
   border: 0;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--backround-text-color);
@@ -1080,47 +1083,80 @@ label, input {
 
   /* ~ ~ ~ Common ~ ~ ~ */
 
+  main {
+    margin: 0;
+    min-width: 768px;
+  }
 
-  /* ~ ~ ~ Studio ~ ~ ~ */
+  .container {
+    min-width: 768px;
+    width: auto;
+  }
 
-  /* ~ ~ ~ Modal ~ ~ ~ */
-
-  /* ~ ~ ~ Modal ~ ~ ~ */
-
-  /* ~ ~ ~ Menu ~ ~ ~ */
-
-  /* ~ ~ ~ Menu ~ ~ ~ */
-
-  /* ~ ~ ~ Portofolio ~ ~ ~ */
-
-  /* ~ ~ ~ Portofolio ~ ~ ~ */
-  .top-phone {
-    margin-left: 40px;
-    }
-
-  .top-mail,
-  .top-phone {
-    color: var(--text-color);
+  header {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80px;
+    width: 768px;
+    margin: 0;
+  }
+  
+  .js-open-menu {
+    display: none;
+  }
+
+  .top-logo {
+    position: relative;
+    top: 0;
+    left: -75px;
+  }
+
+  .top-contact {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 75px;
     gap: 10px;
   }
 
-  nav {
-    height: 80px;
-    display: flex;
-    justify-content: center;
+  .top-contact a {
+    color: var(--text-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.24px;
   }
 
-  nav ul {
+  .main-navigation {
+    display: initial;
+  }
+
+  .main-navigation ul {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    left: -40px;
+  }
+
+  .activities-section {
+    margin: 0;
+    padding: 0;
+    min-width: 768px;
+    width: auto;
+  }
+
+  .abilities {
     display: flex;
     flex-direction: row;
-    gap: 25px;
-    padding-left: 92px;
-    margin-right: 385px;
-    align-self: center;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
+    width: 768px;
+
+  }.abilities p {
+    width: 354px;
   }
 
   .link-line {
@@ -1158,36 +1194,43 @@ label, input {
     opacity: 100%;
   }
 
-  .js-menu-container {
-    display: none;
+  .footer-container {
+    min-width: 768px;
+    width: auto;
   }
 
-  .container {
-    background-color: blue;
-    font-family: var(--text-font-family);
-    font-weight: 700;
-    color: var(--heading-color);
-    width: 768px;
-    display: block;
-    margin: 0;
-    margin: auto;
-  }
 
-   .about-section {
+  /* ~ ~ ~ Studio ~ ~ ~ */
+
+  .about-section {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background-image-t.jpg);
+      url(../images/background-image-t.jpg);
+    min-width: 768px;
   }
+
+  /* ~ ~ ~ Modal ~ ~ ~ */
+
+  /* ~ ~ ~ Modal ~ ~ ~ */
+
+  /* ~ ~ ~ Menu ~ ~ ~ */
+
+  /* ~ ~ ~ Menu ~ ~ ~ */
+
+  /* ~ ~ ~ Portofolio ~ ~ ~ */
+
+  /* ~ ~ ~ Portofolio ~ ~ ~ */
+
 }
 
 @media only screen and (min-width: 1158px) {
   /* For desktop: */
 
-  .js-menu-container {
+  .js-open-menu {
     display: none;
   }
   .top-phone {
     margin-left: 40px;
-    }
+  }
 
   .top-mail,
   .top-phone {
@@ -1254,6 +1297,7 @@ label, input {
   }
 
   .container {
+    background-color: #fff;
     font-family: var(--text-font-family);
     font-weight: 700;
     color: var(--heading-color);
@@ -1263,9 +1307,8 @@ label, input {
     margin: auto;
   }
 
-   .about-section {
+  .about-section {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background-image-t.jpg);
+      url(../images/background-image-t.jpg);
   }
 }
-
