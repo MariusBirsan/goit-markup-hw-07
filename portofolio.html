@@ -14,6 +14,40 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="container">
+    <!--menu-->
+    <div class="js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg>
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="menu-drawer-navigation">
+        <ul>
+          <li class="top-container">
+            <a class="top-links" href="index.html">Studio</a>
+          </li>
+          <li class="top-container">
+            <a class="top-links" href="portofolio.html">Portofolio</a>
+          </li>
+          <li class="top-container">
+            <a class="top-links" href="#contact">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a class="menu-phone" href="tel:+1212-772-4510">+1 212-772-4150</a>
+      <ul class="menu-drawer-social">
+        <li><a href="https://www.instagram.com/" class="link">Instagram</a></li>
+        <li><img src="./images/Separator.jpg" alt="line"></li>
+        <li><a href="https://www.twitter.com/" class="link">Twitter</a></li>
+        <li><img src="./images/Separator.jpg" alt="line"></li>
+        <li><a href="https://www.facebook.com/" class="link">Facebook</a></li>
+        <li><img src="./images/Separator.jpg" alt="line"></li>
+        <li><a href="https://www.linkedin.com/" class="link">LinkedIn</a></li>
+      </ul>
+    </div>
+    <!--menu-->
+
     <header>
       <a class="top-logo" href=""><span>Web</span>Studio</a>
       <nav class="main-navigation">
@@ -29,6 +63,17 @@
           </li>
         </ul>
       </nav>
+
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg>
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+
       <a class="top-mail" href="mailto:info@devstudio.com">
         <svg class="header-icons envelope">
           <use href="./images/icons.svg#icon-envelope"></use>
@@ -59,7 +104,7 @@
         <ul>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Web-site_img_1.jpg" alt="laptop" width="450" />
+              <img src="images/Web-site_img_1-m.jpg" alt="laptop" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
@@ -73,7 +118,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Design_img_1.jpg" alt="2 basketball players playing basketball" width="450"/>
+              <img src="images/Design_img_1-m.jpg" alt="2 basketball players playing basketball" width="450"/>
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -87,7 +132,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Apps_img_1.jpg" alt="logo" width="450" />
+              <img src="images/Apps_img_1-m.jpg" alt="logo" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -101,7 +146,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Marketing_img_1.jpg" alt="headphones" width="450" />
+              <img src="images/Marketing_img_1-m.jpg" alt="headphones" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -115,7 +160,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Apps_img_2.jpg" alt="2 small boxes" width="450" />
+              <img src="images/Apps_img_2-m.jpg" alt="2 small boxes" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -129,7 +174,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Web-site_img_2.jpg" alt="PC Monitor" width="450" />
+              <img src="images/Web-site_img_2-m.jpg" alt="PC Monitor" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -143,7 +188,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Design_img_2.jpg" alt="opened book" width="450" />
+              <img src="images/Design_img_2-m.jpg" alt="opened book" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -157,7 +202,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Marketing_img_2.jpg" alt="paper label" width="450" />
+              <img src="images/Marketing_img_2-m.jpg" alt="paper label" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -171,7 +216,7 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Apps_img_3.jpg" alt="writing on laptop" width="450" />
+              <img src="images/Apps_img_3-m.jpg" alt="writing on laptop" width="450" />
               <div class="overlay">
                 <div class="overlay-projects-text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -187,62 +232,65 @@
       </section>
     </main>
     <footer id="contact">
-      <div class="contact-section">
-        <a class="bottom-logo" href=""><span>Web</span>Studio</a>
-        <ul>
-          <li>
-            <address>695 Park Ave, NY 10065, USA</address>
-          </li>
-          <li>
-            <a class="bottom-mail" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="bottom-phone"  href="tel:+1212-772-4510"
-              >+1 212-772-4150</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="social-media">
-        <h3>FIND US ON</h3>
-        <div class="social-media-icons">
-          <a href="https://www.instagram.com/" class="team-icons-border">
-            <svg class="social-icons">
-              <use href="./images/icons.svg#icon-instagram-2"></use>
-            </svg>
-          </a>
-          <a href="https://www.twitter.com/" class="team-icons-border">
-            <svg class="social-icons">
-              <use href="./images/icons.svg#icon-twitter-1"></use>
-            </svg>
-          </a>
-          <a href="https://www.facebook.com/" class="team-icons-border">
-            <svg class="social-icons">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/" class="team-icons-border">
-            <svg class="social-icons">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
+      <div class="footer-container">
+        <div class="contact-section">
+          <a class="bottom-logo" href=""><span>Web</span>Studio</a>
+          <ul>
+            <li>
+              <address>695 Park Ave, NY 10065, USA</address>
+            </li>
+            <li>
+              <a class="bottom-mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="bottom-phone" href="tel:+1212-772-4510"
+                >+1 212-772-4150</a
+              >
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="subscribe">
-        <h3>SUBSCRIBE FOR THE NEWSLATTER</h3>
-        <label class="subscribe-content" >
-          <input type="text" id="e-mail" name="e-mail" placeholder="E-mail"/>
-          
-        </label>
-        <button type="submit" id="subscribe-btn">
+        <div class="social-media">
+          <h3>FIND US ON</h3>
+          <div class="social-media-icons">
+            <a href="https://www.instagram.com/" class="team-icons-border">
+              <svg class="social-icons">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+            <a href="https://www.twitter.com/" class="team-icons-border">
+              <svg class="social-icons">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/" class="team-icons-border">
+              <svg class="social-icons">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/" class="team-icons-border">
+              <svg class="social-icons">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="subscribe">
+          <h3>SUBSCRIBE FOR THE NEWSLATTER</h3>
+          <label class="subscribe-content">
+            <input type="text" id="e-mail" name="e-mail" placeholder="E-mail" />
+          </label>
+          <button type="submit" id="subscribe-btn">
             Subscribe
             <svg class="subscribe-btn-svg">
               <use href="./images/icons.svg#icon-plane"></use>
             </svg>
           </button>
+        </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <!--Mobile menu-->
   </body>
 </html>
