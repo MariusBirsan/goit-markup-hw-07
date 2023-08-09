@@ -157,7 +157,7 @@ p {
   padding: 48px 40px;
   z-index: 1;
   min-width: 480px;
-  width: auto;
+  width: 100%;
 }
 
 .js-menu-container .js-close-menu {
@@ -1154,25 +1154,6 @@ input {
     left: -40px;
   }
 
-  .activities-section {
-    padding: 0;
-    min-width: 768px;
-    width: auto;
-    margin-left:0;
-  }
-
-  .abilities {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    width: 768px;
-
-  }.abilities p {
-    width: 354px;
-  }
-
   .link-line {
     height: 4px;
     width: 42px;
@@ -1226,6 +1207,25 @@ input {
     min-width: 768px;
   }
 
+   .activities-section {
+    padding: 0;
+    min-width: 768px;
+    width: auto;
+    margin-left:0;
+  }
+
+  .abilities {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 768px;
+
+  }.abilities p {
+    width: 354px;
+  }
+
   .team-section {
     min-width: 768px;
     width: auto;
@@ -1243,16 +1243,6 @@ input {
   .customers {
     width: 768px;
   }
-
-  
-
-  /* ~ ~ ~ Modal ~ ~ ~ */
-
-  /* ~ ~ ~ Modal ~ ~ ~ */
-
-  /* ~ ~ ~ Menu ~ ~ ~ */
-
-  /* ~ ~ ~ Menu ~ ~ ~ */
 
   /* ~ ~ ~ Portofolio ~ ~ ~ */
 
@@ -1295,16 +1285,23 @@ input {
     padding: 49px 24px 105px;
   }
 
-  /* ~ ~ ~ Portofolio ~ ~ ~ */
-
 }
 
 @media only screen and (min-width: 1158px) {
   /* For desktop: */
 
+  /* ~ ~ ~ Common ~ ~ ~ */
+
   .js-open-menu {
     display: none;
   }
+
+  header {
+    display: flex;
+    justify-content: center;
+    width: 1600px;
+  }
+
   .top-phone {
     margin-left: 40px;
   }
@@ -1373,19 +1370,38 @@ input {
     display: none;
   }
 
+  /* ~ ~ ~ Studio ~ ~ ~ */
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-self: auto;
+    align-items: center;
+    min-width: 1600px;
+    width: 100%;
+  }
+
   .container {
     background-color: #fff;
     font-family: var(--text-font-family);
     font-weight: 700;
     color: var(--heading-color);
-    width: 768px;
-    display: block;
+    min-width: 1600px;
+    display: flex;
     margin: 0;
     margin: auto;
   }
 
   .about-section {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/background-image-t.jpg);
+      url(../images/background-image.jpg);
+    background-repeat: no-repeat;
+    min-width: 1600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-shrink: 1;
+    margin: 0;
   }
 }
