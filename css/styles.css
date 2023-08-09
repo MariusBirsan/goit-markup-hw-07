@@ -460,7 +460,7 @@ address {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 15px;
+  margin: 60px 15px 0;
 }
 
 .activities-section h3 {
@@ -521,29 +521,35 @@ address {
   flex-direction: column;
   align-items: center;
   background-color: #f5f4fa;
+  margin-top: 60px;
 }
 
-.team-section ul {
-  padding: 0;
-  margin: 0;
-}
-
-.team-section ul:nth-child(-n + 4) .team-content {
+.team-section ul:nth-child(-n + 4) li {
   margin-bottom: 60px;
 }
 .team-section h2 {
-  margin-top: 94px;
-  margin-bottom: 0;
+  margin-top: 60px;
+  margin-bottom: 30px;
   padding-bottom: 0;
 }
 
 .team-content {
   background-color: var(--backround-text-color);
   text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: #f5f4fa;
+}
+
+.team-content li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  margin-top: 30px;
+  background-color: var(--backround-text-color);
 }
 
 .team-icons {
@@ -658,7 +664,7 @@ address {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   position: relative;
-  top: -165px;
+  top: -25px;
   transform: scale(1);
   transition-property: transform;
   transition: var(--transition);
@@ -932,6 +938,7 @@ input {
   min-width: 480px;
   width: auto;
   background: #ececec;
+  margin: 0;
 }
 
 .filters {
@@ -1027,22 +1034,21 @@ input {
   background-color: rgba(33, 150, 243, 0.9);
   transition-property: height;
   transition: var(--transition);
-  color: red;
 }
 
 .projects li:hover .overlay {
-  height: auto;
+  height: 100%;
 }
 
 .overlay-projects-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 410px;
-  height: 140px;
+  width: 450px;
+  height: 294px;
 }
 
-.overlay div p {
+.overlay-projects-text p {
   color: white;
   overflow: hidden;
   font-size: 18px;
@@ -1050,8 +1056,10 @@ input {
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.54px;
-  position: absolute;
-  top: 25%;
+  width: inherit;
+  height: inherit;
+  margin: 0;
+  padding: 77px 24px 105px;
 }
 
 .first {
@@ -1118,6 +1126,12 @@ input {
     position: relative;
     left: 75px;
     gap: 10px;
+    width: 150px;
+  }
+
+  .top-mail, .top-phone {
+    display: flex;
+    gap: 8px;
   }
 
   .top-contact a {
@@ -1141,10 +1155,10 @@ input {
   }
 
   .activities-section {
-    margin: 0;
     padding: 0;
     min-width: 768px;
     width: auto;
+    margin-left:0;
   }
 
   .abilities {
@@ -1202,19 +1216,35 @@ input {
 
   /* ~ ~ ~ Studio ~ ~ ~ */
 
+  main {
+    width: 768px;
+  }
+
   .about-section {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/background-image-t.jpg);
     min-width: 768px;
   }
 
+  .team-section {
+    min-width: 768px;
+    width: auto;
+  }
+
+  .team-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 768px;
+  }
+
   .customers {
     width: 768px;
   }
 
-  .team-section ul {
-    flex-direction: row;
-  }
+  
 
   /* ~ ~ ~ Modal ~ ~ ~ */
 
@@ -1225,6 +1255,45 @@ input {
   /* ~ ~ ~ Menu ~ ~ ~ */
 
   /* ~ ~ ~ Portofolio ~ ~ ~ */
+
+  .line {
+    min-width: 768px;
+    width: auto;
+  }
+
+  .filters {
+    min-width: 768px;
+  }
+
+  .filters ul {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+
+  .projects {
+    display: flex;
+    max-width: 768px;
+  }
+
+  .projects ul{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+
+  .overlay-projects-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 354px;
+    height: 294px;
+  }
+
+  .overlay-projects-text p {
+    padding: 49px 24px 105px;
+  }
 
   /* ~ ~ ~ Portofolio ~ ~ ~ */
 

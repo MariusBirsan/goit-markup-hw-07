@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
     <title>Web Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/modern-normalize.css" />
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="container">
@@ -35,17 +39,19 @@
         </ul>
       </nav>
       <div class="top-contact">
-        <a class="menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="menu-mail" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        >
         <a class="menu-phone" href="tel:+1212-772-4510">+1 212-772-4150</a>
       </div>
-      
+
       <ul class="menu-drawer-social">
         <li><a href="https://www.instagram.com/" class="link">Instagram</a></li>
-        <li><img src="./images/Separator.jpg" alt="line"></li>
+        <li><img src="./images/Separator.jpg" alt="line" /></li>
         <li><a href="https://www.twitter.com/" class="link">Twitter</a></li>
-        <li><img src="./images/Separator.jpg" alt="line"></li>
+        <li><img src="./images/Separator.jpg" alt="line" /></li>
         <li><a href="https://www.facebook.com/" class="link">Facebook</a></li>
-        <li><img src="./images/Separator.jpg" alt="line"></li>
+        <li><img src="./images/Separator.jpg" alt="line" /></li>
         <li><a href="https://www.linkedin.com/" class="link">LinkedIn</a></li>
       </ul>
     </div>
@@ -181,151 +187,200 @@
 
       <section class="team-section">
         <h2>Our Team</h2>
-        <ul>
-          <li>
-            <div class="team-content">
-              <picture>
-                <!-- Desktop -->
-                <source  
-                  media="(min-width: 1158px)" 
-                  srcset="images/person1-d.jpg, images/person1-d-2x.jpg"
-                  />
-                <!-- Tablet -->
-                <source  media="(min-width: 768px)" srcset="images/person1-t.jpg, images/person1-t-2x.jpg">
-                <!-- Mobile -->
-                <source  media="(min-width: 468px)" srcset="images/person1-m.jpg, images/person1-m-2x.jpg">
-              </picture>
-              <img src="images/person1-d.jpg" alt="person image" />
-              <div class="team-description">
-                <h3>Christofer Walker</h3>
-                <p>Product Designer</p>
-                <div class="team-icons">
-                  <a
-                    href="https://www.instagram.com/"
-                    class="team-icons-border"
-                  >
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-instagram-2"></use>
-                    </svg>
-                  </a>
-                  <a href="https://www.twitter.com/" class="team-icons-border">
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-twitter-1"></use>
-                    </svg>
-                  </a>
-                  <a href="https://www.facebook.com/" class="team-icons-border">
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                  <a href="https://www.linkedin.com/" class="team-icons-border">
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </div>
+        <ul class="team-content">
+          <li class="first-person">
+            <picture>
+              <!-- Desktop -->
+              <source
+                media="(min-width:1158px)"
+                srcset="./images/person1-d.jpg, images/person1-d-2x.jpg"
+              />
+              <!-- Tablet -->
+              <source
+                media="(min-width:768px)"
+                srcset="./images/person1-t.jpg, images/person1-t-2x.jpg"
+              />
+              <!-- Mobile -->
+              <source
+                media="(min-width:468px)"
+                srcset="./images/person1-m.jpg, images/person1-m-2x.jpg"
+              />
+              <img src="./images/person1-m.jpg" alt="person image" />
+            </picture>
+            <div class="team-description">
+              <h3>Christofer Walker</h3>
+              <p>Product Designer</p>
+              <div class="team-icons">
+                <a
+                  href="https://www.instagram.com/"
+                  class="team-icons-border"
+                >
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+                <a href="https://www.twitter.com/" class="team-icons-border">
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/" class="team-icons-border">
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/" class="team-icons-border">
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </div>
             </div>
           </li>
-          <li>
-            <div class="team-content">
-              <img src="images/person2-m.jpg" alt="person image" />
-              <div class="team-description">
-                <h3>Kylie Evans</h3>
-                <p>Frontend Developer</p>
-                <div class="team-icons">
-                  <a
-                    href="https://www.instagram.com/"
-                    class="team-icons-border"
-                  >
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-instagram-2"></use>
-                    </svg>
-                  </a>
-                  <a href="https://www.twitter.com/" class="team-icons-border">
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-twitter-1"></use>
-                    </svg>
-                  </a>
-                  <a href="https://www.facebook.com/" class="team-icons-border">
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                  <a href="https://www.linkedin.com/" class="team-icons-border">
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </div>
+          <li class="second-person">
+            <picture>
+              <!-- Desktop -->
+              <source
+                media="(min-width:1158px)"
+                srcset="./images/person2-d.jpg, images/person2-d-2x.jpg"
+              />
+              <!-- Tablet -->
+              <source
+                media="(min-width:768px)"
+                srcset="./images/person2-t.jpg, images/person2-t-2x.jpg"
+              />
+              <!-- Mobile -->
+              <source
+                media="(min-width:468px)"
+                srcset="./images/person2-m.jpg, images/person2-m-2x.jpg"
+              />
+              <img src="./images/person2-m.jpg" alt="person image" />
+            </picture>
+            <div class="team-description">
+              <h3>Kylie Evans</h3>
+              <p>Frontend Developer</p>
+              <div class="team-icons">
+                <a
+                  href="https://www.instagram.com/"
+                  class="team-icons-border"
+                >
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+                <a href="https://www.twitter.com/" class="team-icons-border">
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/" class="team-icons-border">
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/" class="team-icons-border">
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </div>
             </div>
           </li>
-          <li>
-            <div class="team-content">
-              <img src="images/person3-m.jpg" alt="person image" />
-              <div class="team-description">
-                <h3>Ryan Harris</h3>
-                <p>Marketing</p>
-                <div class="team-icons">
-                  <a
-                    href="https://www.instagram.com/"
-                    class="team-icons-border"
-                  >
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-instagram-2"></use>
-                    </svg>
-                  </a>
-                  <a href="https://www.twitter.com/" class="team-icons-border">
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-twitter-1"></use>
-                    </svg>
-                  </a>
-                  <a href="https://www.facebook.com/" class="team-icons-border">
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                  <a href="https://www.linkedin.com/" class="team-icons-border">
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </div>
+          <li class="third-person">
+            <picture>
+              <!-- Desktop -->
+              <source
+                media="(min-width:1158px)"
+                srcset="./images/person3-d.jpg, images/person3-d-2x.jpg"
+              />
+              <!-- Tablet -->
+              <source
+                media="(min-width:768px)"
+                srcset="./images/person3-t.jpg, images/person3-t-2x.jpg"
+              />
+              <!-- Mobile -->
+              <source
+                media="(min-width:468px)"
+                srcset="./images/person3-m.jpg, images/person3-m-2x.jpg"
+              />
+              <img src="./images/person3-m.jpg" alt="person image" />
+            </picture>
+            <div class="team-description">
+              <h3>Ryan Harris</h3>
+              <p>Marketing</p>
+              <div class="team-icons">
+                <a
+                  href="https://www.instagram.com/"
+                  class="team-icons-border"
+                >
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+                <a href="https://www.twitter.com/" class="team-icons-border">
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/" class="team-icons-border">
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/" class="team-icons-border">
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </div>
             </div>
           </li>
-          <li>
-            <div class="team-content">
-              <img src="images/person4-m.jpg" alt="person image" />
-              <div class="team-description">
-                <h3>Tyler Moore</h3>
-                <p>UI Designer</p>
-                <div class="team-icons">
-                  <a
-                    href="https://www.instagram.com/"
-                    class="team-icons-border"
-                  >
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-instagram-2"></use>
-                    </svg>
-                  </a>
-                  <a href="https://www.twitter.com/" class="team-icons-border">
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-twitter-1"></use>
-                    </svg>
-                  </a>
-                  <a href="https://www.facebook.com/" class="team-icons-border">
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                  <a href="https://www.linkedin.com/" class="team-icons-border">
-                    <svg class="social-icons">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </div>
+          <li class="forth-person">
+            <picture>
+              <!-- Desktop -->
+              <source
+                media="(min-width:1158px)"
+                srcset="./images/person4-d.jpg, images/person4-d-2x.jpg"
+              />
+              <!-- Tablet -->
+              <source
+                media="(min-width:768px)"
+                srcset="./images/person4-t.jpg, images/person4-t-2x.jpg"
+              />
+              <!-- Mobile -->
+              <source
+                media="(min-width:468px)"
+                srcset="./images/person4-m.jpg, images/person4-m-2x.jpg"
+              />
+              <img src="./images/person4-m.jpg" alt="person image" />
+            </picture>
+            <div class="team-description">
+              <h3>Tyler Moore</h3>
+              <p>UI Designer</p>
+              <div class="team-icons">
+                <a
+                  href="https://www.instagram.com/"
+                  class="team-icons-border"
+                >
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+                <a href="https://www.twitter.com/" class="team-icons-border">
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/" class="team-icons-border">
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/" class="team-icons-border">
+                  <svg class="social-icons">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </div>
             </div>
           </li>

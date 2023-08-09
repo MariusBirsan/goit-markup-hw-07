@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
     <title>Portofolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,22 +37,24 @@
           </li>
         </ul>
       </nav>
-      <a class="menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a class="menu-mail" href="mailto:info@devstudio.com"
+        >info@devstudio.com</a
+      >
       <a class="menu-phone" href="tel:+1212-772-4510">+1 212-772-4150</a>
       <ul class="menu-drawer-social">
         <li><a href="https://www.instagram.com/" class="link">Instagram</a></li>
-        <li><img src="./images/Separator.jpg" alt="line"></li>
+        <li><img src="./images/Separator.jpg" alt="line" /></li>
         <li><a href="https://www.twitter.com/" class="link">Twitter</a></li>
-        <li><img src="./images/Separator.jpg" alt="line"></li>
+        <li><img src="./images/Separator.jpg" alt="line" /></li>
         <li><a href="https://www.facebook.com/" class="link">Facebook</a></li>
-        <li><img src="./images/Separator.jpg" alt="line"></li>
+        <li><img src="./images/Separator.jpg" alt="line" /></li>
         <li><a href="https://www.linkedin.com/" class="link">LinkedIn</a></li>
       </ul>
     </div>
     <!--menu-->
 
     <header>
-      <a class="top-logo" href=""><span>Web</span>Studio</a>
+      <a class="top-logo" href=""><span>Web</span>Studios</a>
       <nav class="main-navigation">
         <ul>
           <li class="top-container">
@@ -74,20 +79,22 @@
         </svg>
       </button>
 
-      <a class="top-mail" href="mailto:info@devstudio.com">
-        <svg class="header-icons envelope">
-          <use href="./images/icons.svg#icon-envelope"></use>
-        </svg>
-        @devstudio.com
-      </a>
-      <a class="top-phone" href="tel:+1212-772-4510">
-        <svg class="header-icons smartphone">
-          <use href="./images/icons.svg#icon-smartphone"></use>
-        </svg>
-        +1 212-772-4150
-      </a>
+      <div class="top-contact">
+        <a class="top-mail" href="mailto:info@devstudio.com">
+          <svg class="header-icons envelope">
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>
+          info@devstudio.com
+        </a>
+        <a class="top-phone" href="tel:+1212-772-4510">
+          <svg class="header-icons smartphone">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>
+          +1 212-772-4150
+        </a>
+      </div>
     </header>
-    <hr class="line"/>
+    <hr class="line" />
     <main>
       <section class="filters">
         <ul>
@@ -104,10 +111,31 @@
         <ul>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Web-site_img_1-m.jpg" alt="laptop" width="450" />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width:1158px)"
+                  srcset="./images/Web-site_img_1-d.jpg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/Web-site_img_1-t.jpg"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width:468px)"
+                  srcset="./images/Web-site_img_1-m.jpg"
+                />
+                <img src="./images/Web-site_img_1-m.jpg" alt="laptop" />
+              </picture>
               <div class="overlay">
                 <div class="overlay-projects-text">
-                  <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  <p>
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
                 </div>
               </div>
             </div>
@@ -118,10 +146,34 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Design_img_1-m.jpg" alt="2 basketball players playing basketball" width="450"/>
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width:1158px)"
+                  srcset="./images/Design_img_1-d.jpg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/Design_img_1-t.jpg"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width:468px)"
+                  srcset="./images/Design_img_1-m.jpg"
+                />
+                <img
+                  src="./images/Design_img_1-m.jpg"
+                  alt="2 basketball players playing basketball"
+                />
+              </picture>
               <div class="overlay">
                 <div class="overlay-projects-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
                 </div>
               </div>
             </div>
@@ -132,10 +184,31 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Apps_img_1-m.jpg" alt="logo" width="450" />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width:1158px)"
+                  srcset="./images/Apps_img_1-d.jpg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/Apps_img_1-t.jpg"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width:468px)"
+                  srcset="./images/Apps_img_1-m.jpg"
+                />
+                <img src="./images/Apps_img_1-m.jpg" a />
+              </picture>
               <div class="overlay">
                 <div class="overlay-projects-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
                 </div>
               </div>
             </div>
@@ -146,10 +219,34 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Marketing_img_1-m.jpg" alt="headphones" width="450" />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width:1158px)"
+                  srcset="./images/Marketing_img_1-d.jpg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/Marketing_img_1-t.jpg"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width:468px)"
+                  srcset="./images/Marketing_img_1-m.jpg"
+                />
+                <img
+                  src="./images/Marketing_img_1-m.jpg"
+                  alt="headphones"
+                />
+              </picture>
               <div class="overlay">
                 <div class="overlay-projects-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
                 </div>
               </div>
             </div>
@@ -160,10 +257,34 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Apps_img_2-m.jpg" alt="2 small boxes" width="450" />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width:1158px)"
+                  srcset="./images/Apps_img_2-d.jpg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/Apps_img_2-t.jpg"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width:468px)"
+                  srcset="./images/Apps_img_2-m.jpg"
+                />
+                <img
+                  src="./images/Apps_img_2-m.jpg"
+                  alt="2 small boxes"
+                />
+              </picture>
               <div class="overlay">
                 <div class="overlay-projects-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
                 </div>
               </div>
             </div>
@@ -174,10 +295,34 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Web-site_img_2-m.jpg" alt="PC Monitor" width="450" />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width:1158px)"
+                  srcset="./images/Web-site_img_2-d.jpg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/Web-site_img_2-t.jpg"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width:468px)"
+                  srcset="./images/Web-site_img_2-m.jpg"
+                />
+                <img
+                  src="./images/Web-site_img_2-m.jpg"
+                  alt="PC Monitor"
+                />
+              </picture>
               <div class="overlay">
                 <div class="overlay-projects-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
                 </div>
               </div>
             </div>
@@ -188,10 +333,34 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Design_img_2-m.jpg" alt="opened book" width="450" />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width:1158px)"
+                  srcset="./images/Design_img_2-d.jpg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/Design_img_2-t.jpg"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width:468px)"
+                  srcset="./images/Design_img_2-m.jpg"
+                />
+                <img
+                  src="./images/Design_img_2-m.jpg"
+                  alt="opened book"
+                />
+              </picture>
               <div class="overlay">
                 <div class="overlay-projects-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
                 </div>
               </div>
             </div>
@@ -202,10 +371,34 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Marketing_img_2-m.jpg" alt="paper label" width="450" />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width:1158px)"
+                  srcset="./images/Marketing_img_2-d.jpg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/Marketing_img_2-t.jpg"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width:468px)"
+                  srcset="./images/Marketing_img_2-m.jpg"
+                />
+                <img
+                  src="./images/Marketing_img_2-m.jpg"
+                  alt="paper label"
+                />
+              </picture>
               <div class="overlay">
                 <div class="overlay-projects-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
                 </div>
               </div>
             </div>
@@ -216,10 +409,34 @@
           </li>
           <li class="projects-description">
             <div class="projects-overlay">
-              <img src="images/Apps_img_3-m.jpg" alt="writing on laptop" width="450" />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width:1158px)"
+                  srcset="./images/Apps_img_3-d.jpg"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/Apps_img_3-t.jpg"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(min-width:468px)"
+                  srcset="./images/Apps_img_3-m.jpg"
+                />
+                <img
+                  src="images/Apps_img_3-m.jpg"
+                  alt="writing on laptop"
+                />
+              </picture>
               <div class="overlay">
                 <div class="overlay-projects-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
                 </div>
               </div>
             </div>
