@@ -184,7 +184,18 @@
         <ul>
           <li>
             <div class="team-content">
-              <img src="images/person1-m.jpg" alt="person image" />
+              <picture>
+                <!-- Desktop -->
+                <source  
+                  media="(min-width: 1158px)" 
+                  srcset="images/person1-d.jpg, images/person1-d-2x.jpg"
+                  />
+                <!-- Tablet -->
+                <source  media="(min-width: 768px)" srcset="images/person1-t.jpg, images/person1-t-2x.jpg">
+                <!-- Mobile -->
+                <source  media="(min-width: 468px)" srcset="images/person1-m.jpg, images/person1-m-2x.jpg">
+              </picture>
+              <img src="images/person1-d.jpg" alt="person image" />
               <div class="team-description">
                 <h3>Christofer Walker</h3>
                 <p>Product Designer</p>
