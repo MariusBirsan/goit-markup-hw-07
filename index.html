@@ -439,8 +439,7 @@
       </section>
     </main>
 
-    <footer id="contact">
-      <div class="footer-container">
+    <footer>
         <div class="contact-section">
           <a class="bottom-logo" href=""><span>Web</span>Studio</a>
           <ul class="contact-list">
@@ -498,7 +497,6 @@
           </button>
           </div>
         </div>
-      </div>
     </footer>
 
     <!--Modal window-->
@@ -512,21 +510,21 @@
         </button>
         <form>
           <ul>
-            <li>
+            <li class="inputs">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" class="info" />
               <svg class="modal-icons name" id="svg">
                 <use href="./images/icons.svg#icon-modal-name"></use>
               </svg>
             </li>
-            <li>
+            <li class="inputs">
               <label for="phone">Telephone</label>
               <input type="text" id="phone" name="phone" class="info" />
               <svg class="modal-icons phone">
                 <use href="./images/icons.svg#icon-modal-phone"></use>
               </svg>
             </li>
-            <li>
+            <li class="inputs">
               <label for="email">E-mail</label>
               <input type="text" id="email" name="email" class="info" />
               <svg class="modal-icons email">
@@ -539,18 +537,19 @@
                 name="feedback"
                 rows="5"
                 placeholder="Enter the text"
-              ></textarea
-              ><br />
+              ></textarea>
             </li>
-            <li>
+            <li class="conditions-container">
               <label class="conditions"
-                >I agree with the letter and accept the
-                <a href="" class="conditions-link">Terms and Conditions</a>
+                >
                 <input type="checkbox" checked="checked" />
                 <span class="checkmark"></span>
+                I agree with the letter and accept the
+                <a href="" class="conditions-link">Terms and Conditions</a>
+                
               </label>
             </li>
-            <li><input class="text-submit" type="submit" value="Send" /></li>
+            <li class="submit-btn"><input class="text-submit" type="submit" value="Send" /></li>
           </ul>
         </form>
       </div>
