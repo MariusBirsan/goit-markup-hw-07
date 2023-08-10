@@ -490,6 +490,16 @@ address {
 
 .abilities {
   padding: 0;
+  margin-bottom: 30px;
+}
+
+.abilities li {
+  margin-bottom: 30px;
+}
+
+.abilities li h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .abilities .abilities-icons {
@@ -508,11 +518,7 @@ address {
   align-items: center;
 }
 
-.activities-section h2 {
-  display: none;
-}
-
-.description {
+.activities {
   display: none;
 }
 
@@ -570,6 +576,7 @@ address {
   align-items: center;
   transition-property: color, background-color;
   transition: var(--transition);
+  margin-top: 16px;
 }
 
 .team-icons-border:hover,
@@ -621,23 +628,6 @@ address {
 
 .customers h2 {
   margin: 60px 0 30px 0;
-}
-
-.overlay-text {
-  position: absolute;
-  bottom: 4px;
-  color: var(--backround-text-color);
-  background-color: rgba(47, 48, 58, 0.8);
-  width: 370px;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.overlay-text h3 {
-  text-align: center;
-  z-index: 1;
 }
 
 /* ~ ~ ~ Modal window ~ ~ ~ */
@@ -1127,6 +1117,12 @@ input {
     left: 75px;
     gap: 10px;
     width: 150px;
+    transition: var(--transition);
+  }
+
+  .top-contact a:hover,
+   .top-contact a:focus {
+    color: var(--hover-color);
   }
 
   .top-mail, .top-phone {
@@ -1296,39 +1292,19 @@ input {
     display: none;
   }
 
+   .js-menu-container {
+    display: none;
+  }
+
   header {
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     width: 1600px;
   }
 
-  .top-phone {
-    margin-left: 40px;
-  }
-
-  .top-mail,
-  .top-phone {
-    color: var(--text-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-
-  nav {
-    height: 80px;
-    display: flex;
-    justify-content: center;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    padding-left: 92px;
-    margin-right: 385px;
-    align-self: center;
-    justify-content: center;
+  .top-logo {
+    position: relative;
+    left: 215px;
   }
 
   .link-line {
@@ -1340,56 +1316,36 @@ input {
     opacity: 100%;
   }
 
-  .top-container {
+  .main-navigation {
     position: relative;
-    height: 80px;
+    left: -100px;
+  }
+
+  .top-contact {
+    width: 300px;
     display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 40px;
     justify-content: center;
-    align-items: center;
-  }
-
-  .top-links::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background-color: var(--hover-color);
-    border: 2px solid var(--hover-color);
-    border-radius: 2px;
-    opacity: 0;
-    transition: var(--transition);
-  }
-
-  .top-links:active::after {
-    opacity: 100%;
-  }
-
-  .js-menu-container {
-    display: none;
+    left: -200px;
   }
 
   /* ~ ~ ~ Studio ~ ~ ~ */
 
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-self: auto;
-    align-items: center;
-    min-width: 1600px;
-    width: 100%;
-  }
-
   .container {
-    background-color: #fff;
-    font-family: var(--text-font-family);
-    font-weight: 700;
-    color: var(--heading-color);
     min-width: 1600px;
     display: flex;
     margin: 0;
-    margin: auto;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    min-width: 1600px;
+ 
   }
 
   .about-section {
@@ -1403,5 +1359,122 @@ input {
     align-self: center;
     flex-shrink: 1;
     margin: 0;
+  }
+
+  .activities-section {
+    min-width: 1600px;
+    margin-right: 0;
+  }
+
+  .abilities {
+    min-width: 1600px;
+    display: flex;
+  }
+
+  .abilities li, .abilities li p {
+    width: 270px;
+  }
+
+  .activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1170px;
+    height: 386px;
+    margin: 94px 0;
+    position: relative;
+  }
+
+  .description {
+    width: 1600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .overlay-text {
+    color: var(--backround-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 70px;
+  }
+
+  .overlay-text h3 {
+    text-align: center;
+    z-index: 1;
+  }
+
+  .team-section {
+    margin: 0;
+    min-width: 1600px;
+  }
+
+  .team-content {
+    min-width: 1600px;
+    display: flex;
+  }
+
+  .team-content li {
+    width: 270px;
+    height: 428px;
+  }
+
+  .social-icons {
+    width: 20px;
+    height: 20px;
+  }
+
+  .customers-list {
+    min-width: 1600px;
+  }
+
+  .customers-logo-containers {
+    width: 170px;
+    height: 92px;
+  }
+
+  .footer-container {
+    min-width: 1600px;
+    height: 251px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact-list {
+    align-items: start;
+    position: relative;
+    left: 215px;
+    top: -30px;
+  }
+
+  .bottom-logo {
+    font-size: 26px;
+    position: relative;
+    top: -25px;
+    left: 195px;
+  }
+
+  .social-media {
+    align-items: start;
+  }
+
+  .subscribe {
+    position: relative;
+    left: -215px;
+    margin: 0;
+    align-items: start;
+  }
+
+  .subscribe-input {
+    display: flex;
+    gap: 10px;
   }
 }
