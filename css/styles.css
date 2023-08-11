@@ -1124,6 +1124,7 @@ input {
     width: 100%;
     display: flex;
     gap: 50px;
+    padding: 0;
   }
 
   .link-line {
