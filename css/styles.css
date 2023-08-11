@@ -1322,8 +1322,17 @@ input {
     letter-spacing: 0.78px;
   }
 
+  .top-contact {
+    flex-wrap: nowrap;
+  }
+
   .top-mail {
     margin-right: 40px;
+  }
+
+  .top-phone {
+    width: 200px;
+    flex-wrap: nowrap;
   }
 
   /* Footer */
@@ -1481,9 +1490,4 @@ input {
     width: 170px;
     height: 92px;
   }
-
-    /* ~ ~ ~ Portofolio ~ ~ ~ */
-
-
-
 }
